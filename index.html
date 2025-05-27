@@ -1,84 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammad Oman</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Oman | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f4f7fa;
+      color: #333;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    .profile {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 100px;
+      object-fit: cover;
+      border: 4px solid #2563eb;
+    }
+    .info {
+      flex: 1;
+    }
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #2563eb;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .section {
+      padding: 20px;
+    }
+    .section a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <header class="text-center py-6 bg-white shadow-md">
-    <h1 class="text-3xl font-bold">Mohammad Oman</h1>
-    <p class="text-sm text-gray-600">Undergraduate | CUET | Aspiring Software Engineer & AI Enthusiast</p>
-  </header>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mohammad Oman</h1>
+      <p>Competitive Programmer | MERN Developer | ML Enthusiast</p>
+    </header>
+    <div class="profile section">
+      <img src="https://via.placeholder.com/150" alt="Profile Photo" />
+      <div class="info">
+        <p><strong>Currently:</strong> Completed Level 4, Term 1<br />
+        <strong>CGPA:</strong> 3.3 (Up to 8th Semester)</p>
+        <p>Ranked 2nd in LT-EDI@LDK 2025 Shared Task on Multimodal Misogyny Meme Detection (Team: CUET_Ignite@)</p>
+      </div>
+    </div>
 
-  <main class="max-w-4xl mx-auto px-6 py-10">
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">About Me</h2>
-      <p>
-        Hello! I'm Mohammad Oman, currently in Level 4, Term 1 of my B.Sc. in Computer Science & Engineering at CUET. I have a cumulative CGPA of 3.30 up to the 8th semester. I'm highly passionate about competitive programming, machine learning, and full-stack web development.
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Recent Achievement</h2>
-      <p>
-        🏆 Secured <strong>Rank 2</strong> in the <strong>Shared Task on Multimodal Misogyny Identification in Chinese Memes</strong> at <strong>LT-EDI@LDK 2025</strong> as part of team <strong>CUET_Ignite@</strong>.
-      </p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h2>
-      <ul class="list-disc ml-6">
-        <li><strong>Programming Languages:</strong> C, C++, Python, Linux (bash)</li>
-        <li><strong>Web Development:</strong> HTML5, CSS, Tailwind CSS, MERN Stack, SQL, MongoDB</li>
-        <li><strong>Machine Learning:</strong> TensorFlow, Keras, scikit-learn, Pandas, NumPy, Matplotlib</li>
-        <li><strong>Competitive Programming:</strong> Solved 700+ problems</li>
-        <ul class="ml-6 list-square">
-          <li>Codeforces: 450+</li>
-          <li>Vjudge: 95+</li>
-          <li>Beecrowd: 60+</li>
-          <li>LeetCode: 30+</li>
-        </ul>
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C, C++, Python, Linux</li>
+        <li><strong>Web Dev:</strong> HTML5, CSS, Tailwind, MERN Stack, SQL, MongoDB</li>
+        <li><strong>ML/DS:</strong> TensorFlow, Keras, scikit-learn, Pandas, NumPy, Matplotlib</li>
+        <li><strong>CP:</strong> 700+ problems (Codeforces: 450+, Vjudge: 95+, Beecrowd: 60+, Leetcode: 30+)</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Contests</h2>
-      <ul class="list-disc ml-6">
-        <li>CU IT Fiesta IUPC Divisional (Onsite): Ranked 24th</li>
-        <li>CU IT Fiesta IUPC Preliminary (Online): Ranked 22nd</li>
+    <div class="section">
+      <h2>Competitions</h2>
+      <ul>
+        <li>CU IT Fiesta IUPC Divisional Onsite (24th)</li>
+        <li>CU IT Fiesta IUPC Preliminary (22nd)</li>
         <li>ICPC Dhaka Regional Preliminary 2024</li>
-        <li>SRBD R&D Code Contest 2024: Qualified for Round 2</li>
-        <li>Mujib Shotoborsho Divisional Contest CUET (Onsite)</li>
-        <li>CUET Intra University Junior Contest (Online)</li>
+        <li>Round 2 SRBD R&D Code Contest 2024</li>
+        <li>Mujib Shotoborsho Divisional Contest CUET</li>
+        <li>CUET Intra University Junior Contest</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Projects</h2>
-      <ul class="list-disc ml-6">
-        <li><strong>CUET Campus-Based Book Sharing Platform</strong> (MERN Stack)<br>
-        Created a live website where students can share/get books. Technologies: MongoDB, Express.js, React, Node.js, Tailwind CSS.</li>
-        <li><strong>Shooting Game</strong> (Python, Pygame)<br>
-        Implemented health bar, scoring, and level system based on course guidelines.</li>
-        <li><strong>Audio Classification</strong> (Deep Learning)<br>
-        Trained a neural network on a 10-class Kaggle dataset to classify audio signals accurately.</li>
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Book Sharing Platform:</strong> MERN stack website for CUET students.</li>
+        <li><strong>Shooting Game:</strong> Pygame-based game with health bar and scoring.</li>
+        <li><strong>Audio Classification:</strong> Deep learning model using 10-class audio dataset from Kaggle.</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Certificates</h2>
-      <ul class="list-disc ml-6">
-        <li>Supervised Machine Learning: Regression and Classification (Coursera)</li>
-        <li>Unsupervised Learning, Recommenders, and Reinforcement Learning (Coursera)</li>
-        <li>Advanced Machine Learning Algorithms (Coursera)</li>
+    <div class="section">
+      <h2>Certificates</h2>
+      <ul>
+        <li>Coursera: Supervised ML - Regression & Classification</li>
+        <li>Coursera: Unsupervised, Recommenders & RL</li>
+        <li>Coursera: Advanced Machine Learning Algorithms</li>
       </ul>
-    </section>
-
-    <section class="text-center">
-      <p class="text-sm">📧 Contact me: <a href="mailto:mohammad.oman@example.com" class="text-blue-600">mohammad.oman@example.com</a></p>
-    </section>
-  </main>
+    </div>
+  </div>
 </body>
 </html>
